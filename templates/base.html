@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Document{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- header>nav>ul>li>a -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <p>
+            &copy; Sistema Control 2026
+        </p>
+    </footer>
+    https://github.com/larriag13/sistema_control_des_seg.git
+</body>
+</html>
